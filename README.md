@@ -4,9 +4,9 @@
  
  
 # TokenGame
-This repo contains my Bachelor's thesis in Computer Engegneering at the University of Florence. Unfortunatly, the code that I developed will not be released open source, indeed here will be presented only the strategies, the methodologies and the patterns that I used. 
+This repository contains my Bachelor's thesis in Computer Engegneering at the University of Florence. Unfortunately, the code that I developed will not be released open source, indeed here will be presented only the strategies, the methodologies and the patterns that I used. 
 
-The written thesis (in italian), the slides of the presentation and some demo videos are present in the repo.
+The written thesis (in italian), the slides of the presentation and some demo videos are anyway in the repository.
 
 # Overview
 The aim of the thesis was to design and develop a "token game" for Petri nets inside Oris, a tool developed from the [Software Technologies Lab](https://stlab.dinfo.unifi.it) of the [University of Florence](https://www.unifi.it) following consolidated methodologies theorized by the discipline of Software Engineering.
