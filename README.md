@@ -27,13 +27,40 @@ Petri nets offer a graphical notation for stepwise processes that include choice
 
 <p align="center"><img height=300 src="https://github.com/tmscarla/TokenGame/blob/master/Mockups/petrinetExample.png"></p>
 
+# Analysis and Design
 
-# Documentation
+The requirements analysis phase has been driven through the use of use cases scenarios and diagrams. The main aim was to show the possible interactions of the user with the system, assuming an "user goal" layer of abstraction.
 
-# Design
+<p align="center"><img height=300 src="https://github.com/tmscarla/TokenGame/blob/master/UML/APIUseCaseDiagram.png"></p>
 
-# API
+The following four use cases have been outlined:
 
-# GUI
+* **Manual exploration:** the user can choose a particular transition to fire from a list of the available ones.
+* **Automatic exploration:** make a random evolution of the net, according to two parameters:
+  * *Steps*: maximum number of transitions that can fire in sequence
+  * *Stop* condition: stop the exploration when a particular mark of the net is reached
+* **Backtracking:** go back in the exploration for a finite number of steps.
+* **Pick a history step:** the user can pick directly a previous state of the net to show detailed information
 
+## Mockups
+For the GUI, I developed some mockups using an application for prototyping: Balsamiq Mockups. 
+
+<p align="center"><img height=300 src="https://github.com/tmscarla/TokenGame/blob/master/Mockups/TokenGame4.pdf"></p>
+
+The window was divided into three different logical units:
+
+* **Exploration:** enables the user to visualize the current state of the net and gathers all the possibile operations on it. Is itself divided into:
+  * Selected state
+  * Backtracking
+  * Automatic exploration
+* **Path history:** represents the path of the exploration, meaning all the states in which the net has gone trough. 
+* **Petri net:** a visual representation of the Petri net.
+
+# Development
+
+## API
+
+## GUI
+
+## Implementation details
 
