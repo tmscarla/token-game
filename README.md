@@ -43,9 +43,9 @@ The following four use cases have been outlined:
 * **Pick a history step:** the user can pick directly a previous state of the net to show detailed information
 
 ## Mockups
-For the GUI, I developed some mockups using an application for prototyping: Balsamiq Mockups. 
+For the GUI, some mockups have been developed using an application for prototyping: Balsamiq Mockups. 
 
-<p align="center"><img height=300 src="https://github.com/tmscarla/TokenGame/blob/master/Mockups/TokenGame4.pdf"></p>
+<p align="center"><img height=500 src="https://github.com/tmscarla/TokenGame/blob/master/Mockups/Mockup.png"></p>
 
 The window was divided into three different logical units:
 
@@ -58,9 +58,25 @@ The window was divided into three different logical units:
 
 # Development
 
+After the design phase, we went through the implementation of the project in Java. The development has followed two different phases: the API and the GUI. 
+
 ## API
+
+Here we show the class diagram of the API: it has a central class, *TokenGameExploration*, which gathers all the operations available to modify the net.
+
+<p align="center"><img height=500 src="https://github.com/tmscarla/TokenGame/blob/master/UML/APIClassDiagram.png"></p>
 
 ## GUI
 
+In order to develop a GUI consistent with the ORIS' one, we use the library Java Swing and Window Builder: a graphic tool of Eclipse. Here we can see the final view of the token game.
+
+<p align="center"><img height=500 src="https://github.com/tmscarla/TokenGame/blob/master/UML/APIClassDiagram.png"></p>
+
 ## Implementation details
 
+The token game view operates on the net created in the editor view. In order to make possibile for the views to evolve separately, we had to make a deep copy of the Petri net, but we had etherogeneous entities organized in a graph, so we used the *Visitor* pattern with a *DFS (Depth First Search)* to go trough the graph.
+Basically, the algorithm works this way:
+
+* DFS of the graph setting only the output attributes
+* Setting of the input attributes of each entity
+* Setting of the output attributes of the left entites, that is the ones that originates a cycle in the graph
