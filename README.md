@@ -3,8 +3,8 @@
 </p>
  
  
-# TokenGame
-This repository contains my Bachelor's thesis in Computer Engegneering at the University of Florence. Unfortunately, the code that I developed will not be released open source, indeed here will be presented only the strategies, the methodologies and the patterns that I used. 
+# Token Game
+This repository contains my Bachelor's thesis in Computer Engegneering at the University of Florence: *Analysis and Development of a Token Game Component in Java for Stochastic Petri Nets in Oris Tool*.  Unfortunately, the code that I developed will not be released open source, indeed here will be presented only the strategies, the methodologies and the patterns that I used. 
 
 The written thesis (in italian), the slides of the presentation and some demo videos are anyway in the repository.
 
